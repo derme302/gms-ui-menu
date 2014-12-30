@@ -1,13 +1,16 @@
 ///view_adjust()
 
+application_surface_enable(false);
+
 global.display_w = display_get_width();
 global.display_h = display_get_height();
 
 if (os_type == os_android || os_type == os_ios) {
-    w = display_w;
-    h = display_h;
-    view_wview = w;
-    view_hview = h;
+    w = global.display_w;
+    h = global.display_h;
+    
+    view_wview = room_width;
+    view_hview = room_height;
     view_wport = w;
     view_hport = h;
     
