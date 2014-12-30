@@ -174,7 +174,7 @@ selected_item = -1;
 for (var i = 0; i &lt; array_length_1d(txt);  i++) {
     ii = 0;
     // This will check if we are currently pressing this item
-    if inRectangle(view_xview, yy, view_xview+view_wview, yy+96) {
+    if point_in_rectangle(device_mouse_x(0), device_mouse_y(0), view_xview, yy, view_xview+view_wview, yy+96) {
         if (mouse_check_button(mb_left))
             ii = 1;// Set the image index
         if (mouse_check_button_pressed(mb_left))
