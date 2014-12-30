@@ -169,8 +169,7 @@ selected_item = -1;
 
 /*
  Start Loop
- We use 13 because we only added 12 variables at the beggining (12=&lt;i&lt;13)
- You can add as many as you like!
+ Will repeat for the ammount of items in the txt[] array
 */
 
 for (var i = 0; i &lt; array_length_1d(txt);  i++) {
